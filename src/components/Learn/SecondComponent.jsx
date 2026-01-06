@@ -1,3 +1,4 @@
+//jsx:1 parent
 const SecondComponent = () => {
   return <div>Second component</div>;
 };
