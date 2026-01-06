@@ -4,14 +4,11 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 // ()=>{ }
+const Mycomponent = () => {
+  return <div> NTTD & 24082006</div>;
+};
 const App = () => {
   const [count, setCount] = useState(0);
-  const Myfunction = () => {
-    console.log(">>run my arrow function ");
-  };
-
-  Myfunction();
-
   return (
     <>
       <div>
@@ -23,6 +20,7 @@ const App = () => {
         </a>
       </div>
       <h1>Hello world & hoidanit </h1>
+      <Mycomponent></Mycomponent>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
