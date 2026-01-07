@@ -4,16 +4,7 @@ import "./components/todo/todo.css";
 import reactLogo from "./assets/react.svg";
 import { useState } from "react";
 const App = () => {
-  const name = "NTTD Continental";
-  const age = 25;
-  const data = {
-    address: "Tp HCM",
-    country: "Viet Nam",
-  };
-  const [todoList, settodoList] = useState([
-    { id: 1, name: "Learning React" },
-    { id: 2, name: "Watching video" },
-  ]);
+  const [todoList, settodoList] = useState([]);
   const AddnewTodo = (name) => {
     const newTodo = {
       id: randomIntFromInterval(1, 10000000),
@@ -28,7 +19,7 @@ const App = () => {
     <div className="Todo-container">
       <div className="Todo-title">Todo list</div>
       <Todonew AddnewTodo={AddnewTodo} />
-      <TodoData name={name} age={age} data={data} todoList={todoList} />
+      <TodoData todoList={todoList} />
       <div className="Todo-image">
         <img src={reactLogo} className="logo" />
       </div>

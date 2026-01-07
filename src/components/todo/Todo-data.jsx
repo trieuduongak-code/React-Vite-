@@ -1,7 +1,6 @@
 const TodoData = (props) => {
   //props là một biến object {}
   const { todoList } = props;
-  console.log("Check props : ", todoList);
   return (
     <div className="Todo-data">
       {todoList.map((item, index) => {
@@ -13,8 +12,6 @@ const TodoData = (props) => {
           </div>
         );
       })}
-
-      <div>{JSON.stringify(props.todoList)}</div>
     </div>
   );
 };
