@@ -6,7 +6,7 @@ const Todonew = (props) => {
   const [valueInput, setvalueInput] = useState("NTTD");
   const { AddnewTodo } = props;
   const handleEvent = () => {
-    console.log(">>> Check value :", valueInput);
+    AddnewTodo(valueInput);
   };
   const handleOnchange = (name) => {
     setvalueInput(name);
